@@ -25,7 +25,10 @@ MCP_SoK/
 ├── manuscript/                                # Paper manuscripts and visual figures
 │   ├── MCP_SoK_Manuscript_BonView.md          # Full unconstrained manuscript
 │   ├── MCP_SoK_Manuscript_BonView_condensed.md# Journal-ready condensed manuscript
+│   ├── MCP_SoK_Manuscript_AISC.docx           # Formatted camera-ready journal submission (AISC)
 │   └── figures/
+│       ├── figure1_prisma_flow.png            # PRISMA-ScR flow diagram image
+│       ├── figure2_trust_zones.png            # Trust zones & channels architectural diagram
 │       └── figure_1_prisma.md                 # Reconciled PRISMA-ScR flow diagram (Mermaid)
 │
 ├── data/                                      # Research datasets and corpora
@@ -47,6 +50,7 @@ MCP_SoK/
 │       └── Lembar_Koding_E4_CVE_22.xlsx       # Adjudicated coding workbook for E4 benchmark
 │
 ├── supplementary/                             # Supplementary Information files (S1–S6)
+│   ├── MCP_SoK_Supplementary_Material.md      # Unified, complete Supplementary Material document
 │   ├── Table_S1_Query_Strings_Counts.md       # Search query syntax, sources, and hit counts
 │   ├── Table_S2_Data_Extraction_Form.md       # Standardized 21-variable extraction schema
 │   ├── Supplementary_Table_S3_Corpus_Layer_Distribution.csv # Distribution across 4 layers
@@ -62,7 +66,9 @@ MCP_SoK/
 │   │   ├── Lembar_Koding_Pertahanan_v1.3_FROZEN.xlsx # Master frozen defense coding workbook
 │   │   ├── Lembar_Koding_KODER2_BLIND.xlsx    # Independent blind second-coder workbook
 │   │   ├── Pedoman_Pengisian_Lembar_Koding_v1.1.md  # Defense coding codebook and guidelines
-│   │   └── LAPORAN_KESEPAKATAN_KODER2_BLIND.md# Dual-coding agreement report (κ = 0.87)
+│   │   ├── LAPORAN_KESEPAKATAN_KODER2_BLIND.md# Dual-coding agreement report (κ = 0.87)
+│   │   ├── defenses_85_consolidated.csv       # Consolidated 85 defense proposals dataset
+│   │   └── defenses_85_consolidated.xlsx      # Consolidated 85 defense proposals spreadsheet
 │   └── packets/                               # 88 verbatim evidence locator packets (*.md)
 │       ├── attique-2025-internet-healthcare.md
 │       ├── barboni-2025-defense-mcp.md
