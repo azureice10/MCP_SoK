@@ -1,0 +1,26 @@
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+*.ruff_cache/
+
+# Excel lock files
+~$*.xlsx
+~$*.xls
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Backup and temp files
+*.bak
+*.swp
+*.tmp
