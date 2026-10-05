@@ -6,12 +6,15 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.abspath(os.path.join(script_dir, ".."))
     
-    workbook_path = os.path.join(repo_root, "defense", "codebooks", "Lembar_Koding_Pertahanan_v1.3_FROZEN.xlsx")
+    en_workbook = os.path.join(repo_root, "defense", "codebooks", "Defense_Coding_Workbook_v1.3_FROZEN.xlsx")
+    id_workbook = os.path.join(repo_root, "defense", "codebooks", "Lembar_Koding_Pertahanan_v1.3_FROZEN.xlsx")
     csv_path = os.path.join(repo_root, "defense", "codebooks", "defenses_85_consolidated.csv")
     
     print("=== VERIFYING DEFENSE MATURITY & CODER METRICS ===")
-    if os.path.exists(workbook_path):
-        df = pd.read_excel(workbook_path, sheet_name="Koding_85_Defenses")
+    if os.path.exists(en_workbook):
+        df = pd.read_excel(en_workbook, sheet_name="Consolidated_85_Defenses")
+    elif os.path.exists(id_workbook):
+        df = pd.read_excel(id_workbook, sheet_name="Koding_85_Defenses")
     elif os.path.exists(csv_path):
         df = pd.read_csv(csv_path)
     else:
@@ -22,7 +25,10 @@ def main():
     print(f"Total defense records identified: {n_def} (Expected: 85)")
     assert n_def == 85, f"Mismatch: total defenses {n_def} != 85"
     
-    maturity_counts = df["tingkat_kematangan"].value_counts().to_dict()
+    mat_col = "maturity_level" if "maturity_level" in df.columns else "tingkat_kematangan"
+    adapt_col = "adaptive_evaluation" if "adaptive_evaluation" in df.columns else "evaluasi_adaptif"
+    
+    maturity_counts = df[mat_col].value_counts().to_dict()
     l0 = maturity_counts.get("L0", 0)
     l1 = maturity_counts.get("L1", 0)
     l2 = maturity_counts.get("L2", 0)
@@ -40,12 +46,12 @@ def main():
     assert l0 + l1 + l2 + l3 == 85, "Sum of maturity levels != 85"
     
     # Check empirical defenses adaptivity (L1 + L2 = 70)
-    empirical = df[df["tingkat_kematangan"].isin(["L1", "L2"])]
+    empirical = df[df[mat_col].isin(["L1", "L2"])]
     n_emp = len(empirical)
     print(f"Empirical defenses: {n_emp} (Expected: 70)")
     assert n_emp == 70, f"Mismatch: empirical defenses {n_emp} != 70"
     
-    adapt_yes = (empirical["evaluasi_adaptif"].astype(str).str.lower().str.strip() == "yes").sum()
+    adapt_yes = (empirical[adapt_col].astype(str).str.lower().str.strip().isin(["yes", "ya"])).sum()
     print(f"Adaptive evaluation (Yes): {adapt_yes} of {n_emp} (Expected: 3, 4.3%)")
     assert adapt_yes == 3, f"Mismatch: adaptive evaluation {adapt_yes} != 3"
     
