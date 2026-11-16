@@ -18,13 +18,7 @@ _archive_legacy*/
 papers_pdf_local_only/
 *.pdf
 *.png
-!manuscript/figures/*.png
 
-# Journal submission build: keep manuscript text out of the public repo until acceptance
+# Manuscript folder (text, figures, editorial notes) is kept locally only while the paper is under review
 # (similarity screening limits: <=25% overall, <=8% per single source)
-manuscript/submission/*.docx
-manuscript/submission/0*_*.md
-manuscript/submission/references.tsv
-
-# Full manuscript text (long version) is kept locally only
-manuscript/_private/
+manuscript/

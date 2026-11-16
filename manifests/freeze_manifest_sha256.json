@@ -2,15 +2,15 @@
  "repository": "https://github.com/azureice10/MCP_SoK",
  "freeze_date": "2026-11-14",
  "status": "FROZEN_RECONCILED_PUBLICATION_READY",
- "total_files": 40,
+ "total_files": 37,
  "files": {
   ".github/workflows/verify.yml": {
    "size_bytes": 904,
    "sha256": "1c773702c1eac4995efc39511f696ba6023d1debaf6875c0afac43997ff03c31"
   },
   ".gitignore": {
-   "size_bytes": 643,
-   "sha256": "29a63419854085a06bed9995b70aafbb4ffde970a04a357f5b55e0ef33b478ed"
+   "size_bytes": 469,
+   "sha256": "648b00a51bd355cc92880a5f60a27dafebc5f58f35f3c8dd21df7bc6763a14f7"
   },
   "CITATION.cff": {
    "size_bytes": 801,
@@ -21,8 +21,8 @@
    "sha256": "0e12e0e2bbd6576918526ae21481a5c0f8ebb82ba55e1931f0cda3002fbab523"
   },
   "README.md": {
-   "size_bytes": 7812,
-   "sha256": "9e15b8cc3a5eefbab83afda2c37efafebfcc1f689de4f0bbb5b9e27b45bff008"
+   "size_bytes": 7542,
+   "sha256": "863397429abe1d6abb07ec8d2afb57b4da4bf70380eb82f951107abca18e3038"
   },
   "codebooks/Defense_Coding_Guidelines_v1.1.md": {
    "size_bytes": 16325,
@@ -112,18 +112,6 @@
    "size_bytes": 12312,
    "sha256": "72b76a8f3475d56db4d9ffb2d5655d31a1d0a5aebb5f18b3ae4e3b5245f33812"
   },
-  "manuscript/Panduan_Revisi_dan_Surat_Balasan_Editor_AISC.md": {
-   "size_bytes": 26733,
-   "sha256": "3adb371fabe14b354df60c137618416c9ebc08501057afd4542c767fe485b1e1"
-  },
-  "manuscript/figures/figure1_prisma_flow.png": {
-   "size_bytes": 553943,
-   "sha256": "113774d5c8f705b187b220c228dd324f3514f7cc6c881a6052aae44231b8869a"
-  },
-  "manuscript/figures/figure2_trust_zones.png": {
-   "size_bytes": 295481,
-   "sha256": "8f7da684d681186893116acf593817b2047f1e0c1759e4e56ec145c8ba02707e"
-  },
   "reports/LAPORAN_PEMBEKUAN_DAN_PERHITUNGAN_ULANG_FINAL.md": {
    "size_bytes": 30239,
    "sha256": "1e9aefeeedc624d5e535ef4d279a54d7e131af716202543b216a19931859937b"
@@ -137,8 +125,8 @@
    "sha256": "717aed331afe105eb83e983c91416c7259051af83a446eae073db3b25c8a3723"
   },
   "scripts/run_audit_checks.py": {
-   "size_bytes": 4169,
-   "sha256": "752e590adcb12f8c872050f6bf5c66a00858730d2a552cf0661cf7501ec61acf"
+   "size_bytes": 4147,
+   "sha256": "38c6af0945c8478ae31711eb40db156a0e22cd459ec879afa7532828a5a030d8"
   },
   "scripts/verify_defense_maturity.py": {
    "size_bytes": 4316,

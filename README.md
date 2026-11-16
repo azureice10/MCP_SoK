@@ -9,13 +9,12 @@
 
 ## 1. Repository Overview
 
-This repository hosts the complete, deduplicated, and cryptographically checksummed replication package for our Systematization of Knowledge (SoK) on the security of the **Model Context Protocol (MCP)**. It contains:
-1. **Editorial Audit & Figures** (`manuscript/`) — the manuscript text itself is not distributed here while the paper is under journal review
-2. **The Analytical Supplementary Material & Standalone Supplementary Research Dataset** (`supplementary/`)
-3. **The Frozen Reconciled Screening, Corpus, Defense, and Vulnerability Datasets** (`data/`)
-4. **Screening & Defense Coding Codebooks** (`codebooks/`)
-5. **Full-Text Verification & Version-Linkage Provenance** (`evidence/` & `reports/`)
-6. **Automated Reproduction & CI Verification Scripts** (`scripts/`, `tests/`, `.github/workflows/verify.yml`)
+This repository hosts the complete, deduplicated, and cryptographically checksummed replication package for our Systematization of Knowledge (SoK) on the security of the **Model Context Protocol (MCP)**. The manuscript, its figures, and editorial correspondence are not distributed here while the paper is under journal review. The repository contains:
+1. **The Analytical Supplementary Material & Standalone Supplementary Research Dataset** (`supplementary/`)
+2. **The Frozen Reconciled Screening, Corpus, Defense, and Vulnerability Datasets** (`data/`)
+3. **Screening & Defense Coding Codebooks** (`codebooks/`)
+4. **Full-Text Verification & Version-Linkage Provenance** (`evidence/` & `reports/`)
+5. **Automated Reproduction & CI Verification Scripts** (`scripts/`, `tests/`, `.github/workflows/verify.yml`)
 
 ---
 
@@ -28,9 +27,6 @@ MCP_SoK/
 ├── LICENSE                                                # MIT / CC-BY-4.0 License
 ├── README.md                                              # Repository documentation
 ├── requirements.txt                                       # Python dependencies
-├── manuscript/
-│   ├── Panduan_Revisi_dan_Surat_Balasan_Editor_AISC.md    # Editorial screening audit & response letter
-│   └── figures/                                           # Figure 1 (PRISMA-ScR flow) and Figure 2 (trust zones)
 ├── supplementary/
 │   ├── MCP_SoK_Supplementary_Material_Revised.md          # Tables S1–S7 & Sections S3, S5, S6
 │   └── MCP_SoK_Supplementary_Research_Dataset.md          # Standalone Supplementary Dataset (S-Spec, S-E4, S-Corpus, S-Defenses)
@@ -70,11 +66,11 @@ MCP_SoK/
 ├── scripts/
 │   ├── verify_prisma_arithmetic.py
 │   ├── verify_defense_maturity.py
-│   ├── run_audit_checks.py                                # Public checks; manuscript text checks run only if manuscript/_private/ exists
+│   ├── run_audit_checks.py                                # Public checks; manuscript checks run only with a local manuscript/ copy
 │   ├── verify_freeze_hashes.py
 │   ├── refactor_local_workspace.py
 │   ├── build_aisc_docx.py                                 # Authors' tool: builds the journal .docx (needs local manuscript/submission/ sources)
-│   ├── make_figure2_trust_zones.py                         # Regenerates manuscript/figures/figure2_trust_zones.png
+│   ├── make_figure2_trust_zones.py                         # Authors' tool: redraws Figure 2 (local manuscript/ copy)
 │   └── check_aisc_compliance.py                           # Authors' tool: journal-rule checks (needs local manuscript/submission/ sources)
 └── tests/
     └── test_reconciliation.py

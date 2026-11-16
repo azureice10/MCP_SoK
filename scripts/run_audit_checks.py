@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Verify supplementary files and figures against frozen data, and (when available) the manuscript text.
+"""Verify supplementary files against frozen data, and (when available) the manuscript text and figures.
 
 The full manuscript text is not distributed in the public repository (journal similarity screening).
-Checks 1-3 always run. Check 4 runs only if a local copy exists at
+The public checks always run. The manuscript checks (including figures) run only if a local copy exists at
 manuscript/_private/MCP_SoK_Manuscript_Revised_AISC.md (gitignored) and is reported as SKIPPED otherwise.
 """
 import re
@@ -17,22 +17,21 @@ STALE = ['S-Def-27', 'S-Def-52', '71 baseline defenses, the 14 initial supplemen
 
 
 def check_public(supp_text, ds_text):
-    # 1. Figures shipped with the repository
-    for fig in ['figure1_prisma_flow.png', 'figure2_trust_zones.png']:
-        fig_path = ROOT / 'manuscript/figures' / fig
-        assert fig_path.exists() and fig_path.stat().st_size > 50000, f"Missing or empty figure file: {fig_path}"
-    # 2. Frozen metrics and identifiers in the public supplementary files
+    # 1. Frozen metrics and identifiers in the public supplementary files
     for phrase in ['179 MCP-specific', '2 of 71', '51 (71.8%', 'S-Def-16']:
         assert phrase in supp_text, f"Missing key frozen phrase in supplementary material: {phrase}"
     for phrase in ['S-Def-16', 'S-Def-84']:
         assert phrase in ds_text, f"Missing key identifier in research dataset: {phrase}"
     for bad in STALE:
         assert bad not in supp_text, f"Found stale/incorrect phrase in supplementary material: {bad}"
-    # 3. Completeness
+    # 2. Completeness
     assert len(supp_text) > 10000 and len(ds_text) > 50000, "Supplementary files incomplete"
 
 
 def check_private(ms_text, supp_text):
+    for fig in ['figure1_prisma_flow.png', 'figure2_trust_zones.png']:
+        fig_path = ROOT / 'manuscript/figures' / fig
+        assert fig_path.exists() and fig_path.stat().st_size > 50000, f"Missing or empty figure file: {fig_path}"
     words = len(ms_text.split())
     assert words >= 3500, f"Manuscript length {words} < 3,500 words"
     ref_section = ms_text[ms_text.find('## References'):]
@@ -58,7 +57,7 @@ def main():
     supp_text = (ROOT / 'supplementary/MCP_SoK_Supplementary_Material_Revised.md').read_text(encoding='utf-8')
     ds_text = (ROOT / 'supplementary/MCP_SoK_Supplementary_Research_Dataset.md').read_text(encoding='utf-8')
     check_public(supp_text, ds_text)
-    print("[OK] Public audit passed: figures present, frozen metrics and identifiers consistent, no stale phrases in supplementary material.")
+    print("[OK] Public audit passed: frozen metrics and identifiers consistent, no stale phrases in supplementary material.")
     if PRIVATE_MS.exists():
         words, n, share = check_private(PRIVATE_MS.read_text(encoding='utf-8'), supp_text)
         print(f"[OK] Private manuscript audit passed: {words} words, {n} references ({share:.1%} from 2021-2026, 0 arXiv/CVE in main refs).")
