@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset, taxonomy, or replication package, please cite our Systematization of Knowledge (SoK) study."
+title: "Security of Model Context Protocol in Agentic AI Systems: A Systematization of Knowledge on Threats, Trust Boundaries, and Defense Mechanisms"
+authors:
+  - family-names: "Hadiprakoso"
+    given-names: "Raden Budiarto"
+    affiliation: "Politeknik Siber dan Sandi Negara, Indonesia"
+  - family-names: "Buana"
+    given-names: "I Komang Setia"
+    affiliation: "Politeknik Siber dan Sandi Negara, Indonesia"
+  - family-names: "Kabetta"
+    given-names: "Herman"
+    affiliation: "Politeknik Siber dan Sandi Negara, Indonesia"
+date-released: 2026-11-14
+version: "2.0.0-frozen"
+repository-code: "https://github.com/azureice10/MCP_SoK"
+license: "MIT"

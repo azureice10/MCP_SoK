@@ -1,0 +1,26 @@
+name: verify-replication-package
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Verify PRISMA arithmetic and exclusion reconciliation
+        run: python scripts/verify_prisma_arithmetic.py
+      - name: Verify defense maturity and coverage statistics
+        run: python scripts/verify_defense_maturity.py
+      - name: Verify manuscript and bibliography compliance
+        run: python scripts/run_audit_checks.py
+      - name: Verify SHA-256 freeze manifest integrity
+        run: python scripts/verify_freeze_hashes.py
+      - name: Run automated reconciliation unit tests
+        run: python -m unittest discover -s tests -p "test_reconciliation.py"

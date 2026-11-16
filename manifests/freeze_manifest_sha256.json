@@ -1,0 +1,168 @@
+{
+ "repository": "https://github.com/azureice10/MCP_SoK",
+ "freeze_date": "2026-11-14",
+ "status": "FROZEN_RECONCILED_PUBLICATION_READY",
+ "total_files": 40,
+ "files": {
+  ".github/workflows/verify.yml": {
+   "size_bytes": 904,
+   "sha256": "1c773702c1eac4995efc39511f696ba6023d1debaf6875c0afac43997ff03c31"
+  },
+  ".gitignore": {
+   "size_bytes": 643,
+   "sha256": "29a63419854085a06bed9995b70aafbb4ffde970a04a357f5b55e0ef33b478ed"
+  },
+  "CITATION.cff": {
+   "size_bytes": 801,
+   "sha256": "aefa1bfb3002485b3b3c65b348c51961364d8a507285a906c1b28a4b691c8fad"
+  },
+  "LICENSE": {
+   "size_bytes": 1007,
+   "sha256": "0e12e0e2bbd6576918526ae21481a5c0f8ebb82ba55e1931f0cda3002fbab523"
+  },
+  "README.md": {
+   "size_bytes": 7812,
+   "sha256": "9e15b8cc3a5eefbab83afda2c37efafebfcc1f689de4f0bbb5b9e27b45bff008"
+  },
+  "codebooks/Defense_Coding_Guidelines_v1.1.md": {
+   "size_bytes": 16325,
+   "sha256": "250c471901bf4831b2c32baafddb15e7581aa529d147ea1e7987b02078dcf433"
+  },
+  "codebooks/Screening_Operational_Guidelines_v3.md": {
+   "size_bytes": 10026,
+   "sha256": "718a0e5585bb8d8a9d405aa17697fb8ef1d5b7926d63c71c20bf4a2cb3cbfcd1"
+  },
+  "codebooks/Screening_Substitution_Test_v3.2.md": {
+   "size_bytes": 6990,
+   "sha256": "128d23feaa0a3141cfb7b2c1ae076b5ef6a78aa74a416f750c46c563eedbe648"
+  },
+  "codebooks/Section_S3_Screening_Calibration_Audit.md": {
+   "size_bytes": 8124,
+   "sha256": "976f3ca332a3c9813644d56192f50327475279a13bdad99872a1a6322c50072b"
+  },
+  "data/corpus/background_set_b_11.csv": {
+   "size_bytes": 4539,
+   "sha256": "86bda23839e00290dce4b3db0dff0c81d727ea46ffe0e9f1b08da08a1728c7d3"
+  },
+  "data/corpus/dataset_s3_frozen_corpus_179.csv": {
+   "size_bytes": 70141,
+   "sha256": "4e92d4f46da147eeb52fce755d0543f2a73c15fd3acd12b32d3dcaa1f5f61de0"
+  },
+  "data/corpus/mcp_sok_corpus_170_conservative_frozen.csv": {
+   "size_bytes": 59326,
+   "sha256": "7c7366c3dc02f9380f3e7b7aa50405a910407202891cbdc1ec993a56dabc4aa4"
+  },
+  "data/corpus/mcp_sok_corpus_179_reconciled_frozen.csv": {
+   "size_bytes": 63331,
+   "sha256": "d1e1267a6822c52ab12c72da116579a28fd6f1c82fc7a3730145d5f964f9c206"
+  },
+  "data/defenses/dataset_s4_frozen_defenses_88.csv": {
+   "size_bytes": 33366,
+   "sha256": "78bf2cbf452c0eccd0bdc4a0b162ce5644eb1285f64a67884610808b3c6fd672"
+  },
+  "data/defenses/defenses_84_reconciled_frozen.csv": {
+   "size_bytes": 78358,
+   "sha256": "f6eb1497051e0210d6fefeafda51080b03bae39f860dd6876e2ed5589c0f3caa"
+  },
+  "data/defenses/defenses_88_reconciled_frozen.csv": {
+   "size_bytes": 82198,
+   "sha256": "0bb7676b5ada038c37f24f97ed47cbac4778eb1828405c247d8d3d0eb3fa6794"
+  },
+  "data/screening/baseline_pool_460.csv": {
+   "size_bytes": 188967,
+   "sha256": "ebb9297bd34dbb33c451758e2136e236b1e3248c70087348c770674802c1c68d"
+  },
+  "data/screening/exclusion_code_reconciliation_worksheet.csv": {
+   "size_bytes": 58844,
+   "sha256": "ec885e151f7be61acc056ecc9c023c4f94307f31d0914c74ee6830f3f3bc1d50"
+  },
+  "data/screening/prisma_screening_pool_reconciled_frozen.csv": {
+   "size_bytes": 302021,
+   "sha256": "69361c03d297c2a812cc9cab1abdf0afe5a18411835a1ae944b941c7ce831fa5"
+  },
+  "data/screening/screening_calibration_sample_92.csv": {
+   "size_bytes": 190682,
+   "sha256": "5382bc984abb0a2ba490a09d1f837120e6d5a18ad85396cc79bdb4b5212d051c"
+  },
+  "data/screening/screening_pool_reconciled.json": {
+   "size_bytes": 680749,
+   "sha256": "7d91437e946d3bce8b00be0af76e9ba86b9e1a32d5efab207977e23d11e45a68"
+  },
+  "data/screening/supplementary_pool_213_raw.csv": {
+   "size_bytes": 73071,
+   "sha256": "c3b28a0e87e0458f9722b687a2bd11fb1d86a290266c3385a7606be97d13f707"
+  },
+  "data/validation/dataset_s1_mcp_specifications.csv": {
+   "size_bytes": 2952,
+   "sha256": "e49ad26edb0eef45617b14a5ef50ed7a5b7f5f6c732a46e5268b8fd1f2b933b9"
+  },
+  "data/validation/dataset_s2_e4_cves_and_incidents.csv": {
+   "size_bytes": 6939,
+   "sha256": "603b27bbbc4148afc9df5cb03b4ffcfe8420ef1e0df7f98b4e4943a580f8ff8d"
+  },
+  "evidence/duplicate_id_evidence.json": {
+   "size_bytes": 2068,
+   "sha256": "16a2cd12d11280fd7c4244aacc93e718fc2d5387c5eaa89d27f1c38600b9735f"
+  },
+  "evidence/four_case_evidence.json": {
+   "size_bytes": 31869,
+   "sha256": "e59165c93257f80143cfbc99bb15ce74049b52e77ddfecfca11b3abf19012ff8"
+  },
+  "evidence/source_recovery_manifest.json": {
+   "size_bytes": 12312,
+   "sha256": "72b76a8f3475d56db4d9ffb2d5655d31a1d0a5aebb5f18b3ae4e3b5245f33812"
+  },
+  "manuscript/Panduan_Revisi_dan_Surat_Balasan_Editor_AISC.md": {
+   "size_bytes": 26733,
+   "sha256": "3adb371fabe14b354df60c137618416c9ebc08501057afd4542c767fe485b1e1"
+  },
+  "manuscript/figures/figure1_prisma_flow.png": {
+   "size_bytes": 553943,
+   "sha256": "113774d5c8f705b187b220c228dd324f3514f7cc6c881a6052aae44231b8869a"
+  },
+  "manuscript/figures/figure2_trust_zones.png": {
+   "size_bytes": 295481,
+   "sha256": "8f7da684d681186893116acf593817b2047f1e0c1759e4e56ec145c8ba02707e"
+  },
+  "reports/LAPORAN_PEMBEKUAN_DAN_PERHITUNGAN_ULANG_FINAL.md": {
+   "size_bytes": 30239,
+   "sha256": "1e9aefeeedc624d5e535ef4d279a54d7e131af716202543b216a19931859937b"
+  },
+  "requirements.txt": {
+   "size_bytes": 14,
+   "sha256": "1f67090ddd59179ef0ec800019087a8d4af47db0ef0f8bef42042e008514525f"
+  },
+  "scripts/refactor_local_workspace.py": {
+   "size_bytes": 3501,
+   "sha256": "717aed331afe105eb83e983c91416c7259051af83a446eae073db3b25c8a3723"
+  },
+  "scripts/run_audit_checks.py": {
+   "size_bytes": 4169,
+   "sha256": "752e590adcb12f8c872050f6bf5c66a00858730d2a552cf0661cf7501ec61acf"
+  },
+  "scripts/verify_defense_maturity.py": {
+   "size_bytes": 4316,
+   "sha256": "9541e3dc75e7dd0d828bf83bb46c411668c70654e88a52fb5164e465ef8d6266"
+  },
+  "scripts/verify_freeze_hashes.py": {
+   "size_bytes": 839,
+   "sha256": "201a8a9d5943bbbbaf48265fb59e40b91ff916265f43de25af43e1e01634667b"
+  },
+  "scripts/verify_prisma_arithmetic.py": {
+   "size_bytes": 3611,
+   "sha256": "3c857d515a30086e2eeb4df48466a973c556a3908c0b96d7a98904827478d493"
+  },
+  "supplementary/MCP_SoK_Supplementary_Material_Revised.md": {
+   "size_bytes": 31798,
+   "sha256": "8058006c827884935f20d471c2bd0b821223e74228ca98f2ab3c749b71c92248"
+  },
+  "supplementary/MCP_SoK_Supplementary_Research_Dataset.md": {
+   "size_bytes": 141868,
+   "sha256": "d9bef74e55696cc5ca54a1d41926a8a6d24f7736d9d9bea31359ead2112fc6f8"
+  },
+  "tests/test_reconciliation.py": {
+   "size_bytes": 2579,
+   "sha256": "0ea02a1ab27cb4425f197690f27c15f8babe6745461dfa4065d3f941afc7fdec"
+  }
+ }
+}

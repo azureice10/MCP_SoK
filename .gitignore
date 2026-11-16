@@ -1,26 +1,30 @@
-# Python cache and temporary files
+# Python byte-compiled / cache
 __pycache__/
 *.py[cod]
 *$py.class
-*.pytest_cache/
-*.ruff_cache/
+.pytest_cache/
+.venv/
+venv/
 
-# Excel lock files
-~$*.xlsx
-~$*.xls
-
-# Operating System files
+# OS & Editor files
 .DS_Store
 Thumbs.db
-ehthumbs.db
 desktop.ini
-
-# Virtual environment
-venv/
-env/
-.venv/
-
-# Backup and temp files
-*.bak
 *.swp
-*.tmp
+*~
+
+# Local-only copyrighted PDFs, temporary renders, and legacy archives
+_archive_legacy*/
+papers_pdf_local_only/
+*.pdf
+*.png
+!manuscript/figures/*.png
+
+# Journal submission build: keep manuscript text out of the public repo until acceptance
+# (similarity screening limits: <=25% overall, <=8% per single source)
+manuscript/submission/*.docx
+manuscript/submission/0*_*.md
+manuscript/submission/references.tsv
+
+# Full manuscript text (long version) is kept locally only
+manuscript/_private/

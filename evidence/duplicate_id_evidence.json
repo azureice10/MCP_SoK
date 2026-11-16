@@ -1,0 +1,54 @@
+[
+  {
+    "record_id": "zehang-2024-ai-agents-threat-survey-key",
+    "title": "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways",
+    "authors": "Zehang Deng; Yongjian Guo; Changzhou Han; Wanlun Ma; Junwu Xiong; Sheng Wen; Yang Xiang",
+    "year": "2024",
+    "venue": "arXiv (Cornell University)",
+    "doi_or_url": "10.48550/arxiv.2406.02630",
+    "source_pool": "Baseline",
+    "screening_decision": "Excluded",
+    "final_decision": "Exclude",
+    "exclusion_reason": "IC2",
+    "exclusion_reason_original": "IC2"
+  },
+  {
+    "record_id": "zhaorun-2024-agentpoison-red-teaming-llm-agents",
+    "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "authors": "Zhaorun Chen; Zhen Xiang; Chaowei Xiao; Dawn Song; Bo Li",
+    "year": "2024",
+    "venue": "",
+    "doi_or_url": "10.52202/079017-4136",
+    "source_pool": "Baseline",
+    "screening_decision": "Excluded",
+    "final_decision": "Exclude",
+    "exclusion_reason": "IC2",
+    "exclusion_reason_original": "IC2"
+  },
+  {
+    "record_id": "zehang-2024-ai-agents-threat-survey-key",
+    "title": "AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways",
+    "authors": "Zehang Deng; Yongjian Guo; Changzhou Han; Wanlun Ma; Junwu Xiong; Sheng Wen; Yang Xiang",
+    "year": "2024",
+    "venue": "arXiv (Cornell University)",
+    "doi_or_url": "",
+    "source_pool": "Supplementary",
+    "screening_decision": "Included (Set B)",
+    "final_decision": "Include",
+    "exclusion_reason": "",
+    "exclusion_reason_original": ""
+  },
+  {
+    "record_id": "zhaorun-2024-agentpoison-red-teaming-llm-agents",
+    "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "authors": "Zhaorun Chen; Zhen Xiang; Chaowei Xiao; Dawn Song; Bo Li",
+    "year": "2024",
+    "venue": "",
+    "doi_or_url": "",
+    "source_pool": "Supplementary",
+    "screening_decision": "Included (Set B)",
+    "final_decision": "Include",
+    "exclusion_reason": "",
+    "exclusion_reason_original": ""
+  }
+]
