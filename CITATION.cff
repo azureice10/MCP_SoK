@@ -15,9 +15,7 @@ authors:
 version: "2.0"
 date-released: 2026-11-19
 repository-code: "https://github.com/azureice10/MCP_SoK"
-license:
-  - MIT
-  - CC-BY-4.0
+license: CC-BY-4.0
 keywords:
   - Model Context Protocol
   - agentic AI security

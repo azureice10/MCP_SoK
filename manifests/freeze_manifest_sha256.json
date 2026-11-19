@@ -13,8 +13,8 @@
    "sha256": "648b00a51bd355cc92880a5f60a27dafebc5f58f35f3c8dd21df7bc6763a14f7"
   },
   "CITATION.cff": {
-   "size_bytes": 965,
-   "sha256": "44b8f29e408c3b54f827c17ec425052041376beb67511cee6c274d724ea518ce"
+   "size_bytes": 953,
+   "sha256": "246b1c478fecd8a65546e43dfa7f0a57b980273f7697bb82a4d935590d206c9e"
   },
   "LICENSE": {
    "size_bytes": 1125,
@@ -170,6 +170,13 @@
     "scripts/refactor_local_workspace.py"
    ],
    "reason": "Repository documentation and metadata updated for the v2 data release: README (v2 notice and labels), CITATION.cff, LICENSE split into LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data and documentation), CI step for v2/verify.py, local file-system paths removed from evidence/source_recovery_manifest.json and from a script docstring. No frozen dataset, codebook, or supplementary file changed."
+  },
+  {
+   "date": "2026-11-19",
+   "files": [
+    "CITATION.cff"
+   ],
+   "reason": "Single license entry (CC-BY-4.0) so that Zenodo can parse the citation file; .zenodo.json added for the Zenodo archive (not a frozen file). Code remains MIT (LICENSE)."
   }
  ]
 }

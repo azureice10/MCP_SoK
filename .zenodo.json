@@ -1,0 +1,29 @@
+{
+  "upload_type": "dataset",
+  "title": "Replication data for \"Security of the Model Context Protocol in Agentic AI Systems: A Systematization of Knowledge on Threats, Trust Boundaries, and Defense Mechanisms\"",
+  "creators": [
+    {
+      "name": "Hadiprakoso, Raden Budiarto",
+      "affiliation": "Politeknik Siber dan Sandi Negara, Indonesia"
+    },
+    {
+      "name": "Buana, I Komang Setia",
+      "affiliation": "Politeknik Siber dan Sandi Negara, Indonesia"
+    },
+    {
+      "name": "Kabetta, Herman",
+      "affiliation": "Politeknik Siber dan Sandi Negara, Indonesia"
+    }
+  ],
+  "description": "<p>Replication data for the systematization of knowledge \"Security of the Model Context Protocol in Agentic AI Systems\" (AI and Security Convergence, manuscript AISC-12351, under review).</p><p>The folder v2/ holds the data of the revised manuscript: 215 MCP-specific studies (199 in the conservative set), 112 defense records (102 conservative), and 256 advisories screened for the temporal coverage test (216 eligible), with SHA-256 checksums and a verification script (python v2/verify.py). These files are identical to commit 64bb5a1, which the manuscript cites. Files outside v2/ are the frozen v1 package of the original search (14 November 2026).</p><p>Data and documentation are licensed under CC BY 4.0 (LICENSE-DATA); code and scripts under the MIT License (LICENSE).</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "Model Context Protocol",
+    "agentic AI security",
+    "systematization of knowledge",
+    "trust boundaries",
+    "replication package"
+  ]
+}
