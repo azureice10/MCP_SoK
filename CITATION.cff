@@ -12,7 +12,12 @@ authors:
   - family-names: "Kabetta"
     given-names: "Herman"
     affiliation: "Politeknik Siber dan Sandi Negara, Indonesia"
-version: "2.0"
+version: "2.0.2"
+doi: 10.5281/zenodo.24362765
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24362766
+    description: "Archived release v2.0.2 (cited in the manuscript)"
 date-released: 2026-11-19
 repository-code: "https://github.com/azureice10/MCP_SoK"
 license: CC-BY-4.0

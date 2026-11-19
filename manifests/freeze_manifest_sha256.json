@@ -13,8 +13,8 @@
    "sha256": "648b00a51bd355cc92880a5f60a27dafebc5f58f35f3c8dd21df7bc6763a14f7"
   },
   "CITATION.cff": {
-   "size_bytes": 953,
-   "sha256": "246b1c478fecd8a65546e43dfa7f0a57b980273f7697bb82a4d935590d206c9e"
+   "size_bytes": 1115,
+   "sha256": "7b6146ff176bac26f9b4ce5832f751a6306db496f4292311d4151d3b0004b05a"
   },
   "LICENSE": {
    "size_bytes": 1125,
@@ -25,8 +25,8 @@
    "sha256": "f76ddd50edc37df93c38229cd6d5ea0492505b86ca1dad99ebda9eedf8dddfb6"
   },
   "README.md": {
-   "size_bytes": 11201,
-   "sha256": "2e5d57597e26f2f131914a7a54b34ae01e7e62eebe0d5c7d14eb2723883cc70a"
+   "size_bytes": 11536,
+   "sha256": "35c35dbfe2f75bab6c28f47277c92ecb145d4df8141b372514893466d27d6024"
   },
   "codebooks/Defense_Coding_Guidelines_v1.1.md": {
    "size_bytes": 16325,
@@ -177,6 +177,14 @@
     "CITATION.cff"
    ],
    "reason": "Single license entry (CC-BY-4.0) so that Zenodo can parse the citation file; .zenodo.json added for the Zenodo archive (not a frozen file). Code remains MIT (LICENSE)."
+  },
+  {
+   "date": "2026-11-19",
+   "files": [
+    "README.md",
+    "CITATION.cff"
+   ],
+   "reason": "Zenodo DOI of release v2.0.2 (10.5281/zenodo.24362766; concept DOI 10.5281/zenodo.24362765) added."
   }
  ]
 }

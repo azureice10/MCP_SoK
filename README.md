@@ -1,10 +1,12 @@
 # MCP_SoK: Replication Package and Supplementary Research Dataset
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24362766.svg)](https://doi.org/10.5281/zenodo.24362766)
+
 **Paper title:** *Security of the Model Context Protocol in Agentic AI Systems: A Systematization of Knowledge on Threats, Trust Boundaries, and Defense Mechanisms*  
 **Journal:** *AI and Security Convergence* (Bon View Publishing), manuscript under review  
 **Authors:** Raden Budiarto Hadiprakoso\*, I Komang Setia Buana, and Herman Kabetta (*Politeknik Siber dan Sandi Negara, Indonesia*)
 
-> **Current version: v2 (19 November 2026).** The revised manuscript reports an update search (16 November 2026) and a temporal coverage test of the taxonomy. Its data are in [`v2/`](v2/README.md): 215 corpus studies, 112 defense records, and 256 screened advisories, with SHA-256 checksums and a verification script (`python v2/verify.py`). The manuscript cites the immutable commit [`64bb5a1`](https://github.com/azureice10/MCP_SoK/tree/64bb5a12b8898aba6685dedc75cf03bf68add0cf/v2).
+> **Current version: v2 (19 November 2026).** The revised manuscript reports an update search (16 November 2026) and a temporal coverage test of the taxonomy. Its data are in [`v2/`](v2/README.md): 215 corpus studies, 112 defense records, and 256 screened advisories, with SHA-256 checksums and a verification script (`python v2/verify.py`). The manuscript cites the Zenodo archive of release `v2.0.2`, DOI [10.5281/zenodo.24362766](https://doi.org/10.5281/zenodo.24362766) (all versions: [10.5281/zenodo.24362765](https://doi.org/10.5281/zenodo.24362765)). Its `v2/` data are identical to commit [`64bb5a1`](https://github.com/azureice10/MCP_SoK/tree/64bb5a12b8898aba6685dedc75cf03bf68add0cf/v2) (tag `v2.0`).
 >
 > Everything outside `v2/` is the **v1 replication package of the original search** (frozen 14 November 2026: 179 corpus studies, 88 defense records). It remains the record of the original screening, coding, and audits that v2 builds on.
 
