@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""One-click refactoring utility for local Gdriv\MCP_SoK workspace on Windows/Linux/macOS.
+"""One-click refactoring utility for local MCP_SoK working folder on Windows/Linux/macOS.
 
 Usage:
-    python refactor_local_workspace.py --target-dir "C:\path\to\Gdriv\MCP_SoK"
-    python refactor_local_workspace.py --target-dir "C:\path\to\Gdriv\MCP_SoK" --dry-run
+    python refactor_local_workspace.py --target-dir "C:\path\to\MCP_SoK"
+    python refactor_local_workspace.py --target-dir "C:\path\to\MCP_SoK" --dry-run
 
 What this script does:
 1. Scans the target MCP_SoK folder for legacy/redundant snapshots, old drafts, OCR scratch files, and PNG page renders.

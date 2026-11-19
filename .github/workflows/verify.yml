@@ -18,9 +18,11 @@ jobs:
         run: python scripts/verify_prisma_arithmetic.py
       - name: Verify defense maturity and coverage statistics
         run: python scripts/verify_defense_maturity.py
-      - name: Verify manuscript and bibliography compliance
+      - name: Run public audit checks
         run: python scripts/run_audit_checks.py
       - name: Verify SHA-256 freeze manifest integrity
         run: python scripts/verify_freeze_hashes.py
       - name: Run automated reconciliation unit tests
         run: python -m unittest discover -s tests -p "test_reconciliation.py"
+      - name: Verify v2 replication data
+        run: python v2/verify.py

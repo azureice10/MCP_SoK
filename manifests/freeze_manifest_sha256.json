@@ -2,27 +2,31 @@
  "repository": "https://github.com/azureice10/MCP_SoK",
  "freeze_date": "2026-11-14",
  "status": "FROZEN_RECONCILED_PUBLICATION_READY",
- "total_files": 37,
+ "total_files": 38,
  "files": {
   ".github/workflows/verify.yml": {
-   "size_bytes": 904,
-   "sha256": "1c773702c1eac4995efc39511f696ba6023d1debaf6875c0afac43997ff03c31"
+   "size_bytes": 956,
+   "sha256": "f82913715a84093de84752ca8955bef52bfb5e99eb9e093b9a2cac535cd344b1"
   },
   ".gitignore": {
    "size_bytes": 469,
    "sha256": "648b00a51bd355cc92880a5f60a27dafebc5f58f35f3c8dd21df7bc6763a14f7"
   },
   "CITATION.cff": {
-   "size_bytes": 801,
-   "sha256": "aefa1bfb3002485b3b3c65b348c51961364d8a507285a906c1b28a4b691c8fad"
+   "size_bytes": 965,
+   "sha256": "44b8f29e408c3b54f827c17ec425052041376beb67511cee6c274d724ea518ce"
   },
   "LICENSE": {
-   "size_bytes": 1007,
-   "sha256": "0e12e0e2bbd6576918526ae21481a5c0f8ebb82ba55e1931f0cda3002fbab523"
+   "size_bytes": 1125,
+   "sha256": "e1cce012049b75a11ef37cf54ecc2778c69eb01b8e1c1a25c5daf6131554bbae"
+  },
+  "LICENSE-DATA": {
+   "size_bytes": 19240,
+   "sha256": "f76ddd50edc37df93c38229cd6d5ea0492505b86ca1dad99ebda9eedf8dddfb6"
   },
   "README.md": {
-   "size_bytes": 7542,
-   "sha256": "863397429abe1d6abb07ec8d2afb57b4da4bf70380eb82f951107abca18e3038"
+   "size_bytes": 11201,
+   "sha256": "2e5d57597e26f2f131914a7a54b34ae01e7e62eebe0d5c7d14eb2723883cc70a"
   },
   "codebooks/Defense_Coding_Guidelines_v1.1.md": {
    "size_bytes": 16325,
@@ -109,8 +113,8 @@
    "sha256": "e59165c93257f80143cfbc99bb15ce74049b52e77ddfecfca11b3abf19012ff8"
   },
   "evidence/source_recovery_manifest.json": {
-   "size_bytes": 12312,
-   "sha256": "72b76a8f3475d56db4d9ffb2d5655d31a1d0a5aebb5f18b3ae4e3b5245f33812"
+   "size_bytes": 11920,
+   "sha256": "210e299dcfdf9ad1d209cb12cca69885f9ae4fd72cd7d210f49cb18427877c84"
   },
   "reports/LAPORAN_PEMBEKUAN_DAN_PERHITUNGAN_ULANG_FINAL.md": {
    "size_bytes": 30239,
@@ -121,8 +125,8 @@
    "sha256": "1f67090ddd59179ef0ec800019087a8d4af47db0ef0f8bef42042e008514525f"
   },
   "scripts/refactor_local_workspace.py": {
-   "size_bytes": 3501,
-   "sha256": "717aed331afe105eb83e983c91416c7259051af83a446eae073db3b25c8a3723"
+   "size_bytes": 3488,
+   "sha256": "5c6263cf1f03cbe344284dd8eebe7039736dddbc3b60d5cf77bc9691ba6917f8"
   },
   "scripts/run_audit_checks.py": {
    "size_bytes": 4147,
@@ -152,5 +156,20 @@
    "size_bytes": 2579,
    "sha256": "0ea02a1ab27cb4425f197690f27c15f8babe6745461dfa4065d3f941afc7fdec"
   }
- }
+ },
+ "amendments": [
+  {
+   "date": "2026-11-19",
+   "files": [
+    "README.md",
+    "CITATION.cff",
+    "LICENSE",
+    "LICENSE-DATA",
+    ".github/workflows/verify.yml",
+    "evidence/source_recovery_manifest.json",
+    "scripts/refactor_local_workspace.py"
+   ],
+   "reason": "Repository documentation and metadata updated for the v2 data release: README (v2 notice and labels), CITATION.cff, LICENSE split into LICENSE (MIT, code) and LICENSE-DATA (CC BY 4.0, data and documentation), CI step for v2/verify.py, local file-system paths removed from evidence/source_recovery_manifest.json and from a script docstring. No frozen dataset, codebook, or supplementary file changed."
+  }
+ ]
 }
